@@ -209,9 +209,9 @@ The dataset contains customer demographics, account information, subscribed serv
 
 Machine Learning & AI Enthusiast
 
-GitHub: https://github.com/YOUR_USERNAME
+GitHub: https://github.com/rishabh-940
 
-LinkedIn: https://linkedin.com/in/YOUR_LINKEDIN
+LinkedIn: www.linkedin.com/in/rishabh-8527913a3
 
 ---
 
