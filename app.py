@@ -48,58 +48,41 @@ div[data-testid="stMetric"]{
     font-weight:bold;
 }
 
-/* Sidebar */
-section[data-testid="stSidebar"]{
-    background:#0F172A;
+/* ================= Sidebar ================= */
+
+[data-testid="stSidebar"]{
+    background-color:#0F172A !important;
 }
 
-section[data-testid="stSidebar"] *{
-    color:white;
+/* Sidebar title */
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3{
+    color:#FFFFFF !important;
 }
 
-/* ===========================
-   Theme Compatibility
-   =========================== */
-
-/* General text */
-body,
-p,
-label,
-span,
-div {
-    color: inherit !important;
+/* Sidebar labels */
+[data-testid="stSidebar"] label{
+    color:#FFFFFF !important;
+    font-weight:600;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-    color: inherit !important;
+/* Sidebar markdown */
+[data-testid="stSidebar"] p{
+    color:#FFFFFF !important;
 }
 
-/* Markdown text */
-[data-testid="stMarkdownContainer"] {
-    color: inherit !important;
+/* Sidebar radio buttons */
+[data-testid="stSidebar"] .stRadio label{
+    color:#FFFFFF !important;
 }
 
-/* Metric cards */
-[data-testid="stMetricLabel"] {
-    color: inherit !important;
+/* Sidebar icons */
+[data-testid="stSidebar"] svg{
+    fill:white !important;
 }
 
-[data-testid="stMetricValue"] {
-    color: inherit !important;
-}
 
-/* Input labels */
-.stSelectbox label,
-.stNumberInput label,
-.stSlider label {
-    color: inherit !important;
-}
-
-/* Expander text */
-.streamlit-expanderHeader {
-    color: inherit !important;
-}
 </style>
 """, unsafe_allow_html=True)
 
@@ -121,10 +104,15 @@ st.sidebar.image(
     width=80
 )
 
-st.sidebar.title("Customer Churn")
+st.sidebar.markdown("""
+# 📊 Customer Churn
+
+### AI Dashboard
+""")
 st.sidebar.markdown("---")
+st.sidebar.subheader("📑 Navigation")
 page = st.sidebar.radio(
-    "Navigation",
+    "",
     [
         "🏠 Prediction",
         "📈 Model Evaluation",
